@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5F2C35E70AB7CDEB621BA67C /* Pods_Realm_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23EFF3AC1F4B71ECF0F3C85 /* Pods_Realm_Example.framework */; };
+		7982F0872820BDA8009787F6 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7982F0862820BDA8009787F6 /* Cat.swift */; };
+		7982F0892820C06A009787F6 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7982F0882820C06A009787F6 /* RealmViewController.swift */; };
+		7982F08F2820C284009787F6 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7982F08E2820C284009787F6 /* CoreDataViewController.swift */; };
+		7982F0912820C28D009787F6 /* SQLiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7982F0902820C28D009787F6 /* SQLiteViewController.swift */; };
 		79C5A3BF281F944800DC75AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5A3BE281F944800DC75AB /* AppDelegate.swift */; };
 		79C5A3C1281F944800DC75AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5A3C0281F944800DC75AB /* SceneDelegate.swift */; };
 		79C5A3C3281F944800DC75AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5A3C2281F944800DC75AB /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7982F0862820BDA8009787F6 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		7982F0882820C06A009787F6 /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
+		7982F08E2820C284009787F6 /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
+		7982F0902820C28D009787F6 /* SQLiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteViewController.swift; sourceTree = "<group>"; };
 		79C5A3BB281F944800DC75AB /* Realm_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Realm_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C5A3BE281F944800DC75AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79C5A3C0281F944800DC75AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,8 +56,46 @@
 				8DF77545E4F34301CA8E099F /* Pods-Realm_Example.debug.xcconfig */,
 				90ACD76074490C576980FEED /* Pods-Realm_Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7982F08A2820C072009787F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79C5A3C0281F944800DC75AB /* SceneDelegate.swift */,
+				79C5A3BE281F944800DC75AB /* AppDelegate.swift */,
+				79C5A3CC281F944900DC75AB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7982F08B2820C080009787F6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				79C5A3C2281F944800DC75AB /* ViewController.swift */,
+				7982F0882820C06A009787F6 /* RealmViewController.swift */,
+				7982F08E2820C284009787F6 /* CoreDataViewController.swift */,
+				7982F0902820C28D009787F6 /* SQLiteViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7982F08C2820C0BE009787F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79C5A3C4281F944800DC75AB /* Main.storyboard */,
+				79C5A3C7281F944900DC75AB /* Assets.xcassets */,
+				79C5A3C9281F944900DC75AB /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7982F08D2820C0C6009787F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7982F0862820BDA8009787F6 /* Cat.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		79C5A3B2281F944800DC75AB = {
@@ -73,13 +119,10 @@
 		79C5A3BD281F944800DC75AB /* Realm_Example */ = {
 			isa = PBXGroup;
 			children = (
-				79C5A3BE281F944800DC75AB /* AppDelegate.swift */,
-				79C5A3C0281F944800DC75AB /* SceneDelegate.swift */,
-				79C5A3C2281F944800DC75AB /* ViewController.swift */,
-				79C5A3C4281F944800DC75AB /* Main.storyboard */,
-				79C5A3C7281F944900DC75AB /* Assets.xcassets */,
-				79C5A3C9281F944900DC75AB /* LaunchScreen.storyboard */,
-				79C5A3CC281F944900DC75AB /* Info.plist */,
+				7982F08A2820C072009787F6 /* Resources */,
+				7982F08C2820C0BE009787F6 /* Views */,
+				7982F08D2820C0C6009787F6 /* Models */,
+				7982F08B2820C080009787F6 /* Controllers */,
 			);
 			path = Realm_Example;
 			sourceTree = "<group>";
@@ -207,9 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7982F0872820BDA8009787F6 /* Cat.swift in Sources */,
 				79C5A3C3281F944800DC75AB /* ViewController.swift in Sources */,
+				7982F0892820C06A009787F6 /* RealmViewController.swift in Sources */,
+				7982F08F2820C284009787F6 /* CoreDataViewController.swift in Sources */,
 				79C5A3BF281F944800DC75AB /* AppDelegate.swift in Sources */,
 				79C5A3C1281F944800DC75AB /* SceneDelegate.swift in Sources */,
+				7982F0912820C28D009787F6 /* SQLiteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
